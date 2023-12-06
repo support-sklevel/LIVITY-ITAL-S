@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>LIVITY ITAL'S</title>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-LdYR3Jr8z1HJng+S6XS7XG6PTq6SE7GpLMzuzxu8CDXvciCyKBo7p0r6hlKNQvnZd8b+ZNLZk7XkV1G9l9ct9w==" crossorigin="anonymous" />
+</head>
+
+<body>		
+	    <video autoplay muted loop id="video-background">
+    <source src="img/Cee-Roo - Feel The Sounds of Kenya.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+	
+    <nav  id="nav">
+		
+        <div class="navTop">
+            <div class="navItem">
+				<h1  class="logo-title" style="color: #FFD700; font-size: 3em; font-family:  'cabin-sketch'" >.LIVITY ITAL'S</h1>
+            </div>
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="searchInput">
+                    <img src="./img/search.png" width="20" height="20" alt="" class="searchIcon">
+                </div>
+            </div>
+            <div class="navItem">
+				<button class="toggleSwitch" id="soundToggleBtn" onclick="toggleSound()">
+	 <input type="checkbox" id="checkboxInput">
+<label for="checkboxInput" >
+  <div class="speaker">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
+      <!-- SVG path for the speaker icon -->
+      <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
+      <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
+    </svg>
+  </div>
+  <div class="mute-speaker">
+    <svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
+      <!-- SVG path for the mute speaker icon -->
+      <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
+      <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
+    </svg>
+  </div>
+</label>
+
+<!-- Your button with the JavaScript function -->
+ </button>
+
+                <span class="limitedOffer">Limited Offer!</span>
+				
+            </div>
+        </div>
+		<div class="slider">
+        <div class="navBottom"  >
+        
+   <h3 class="menuItem">Honey Blends</h3>
+  <h3 class="menuItem">Nature's Sweet</h3>
+  <h3 class="menuItem">Buzzworthy</h3>
+        </div>
+			</div>
+    </nav>
+	  
+    <!-- <div class="slider" > 
+		 
+        <div class="sliderWrapper">
+            <div class="sliderItem">
+                <img src="img/254112323485_status_8c756783826b446aa922ee69820333a5.jpg" alt="image" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">LIVITY ITAL'S</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$119</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="img/254112323485_status_27a08a2fcbd4495a909f19588116fced.jpg" alt="image" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">LIVITY ITAL'S</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$149</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="img/254112323485_status_96c3007ae99b42ffaf613a4f4432b761.jpg" alt="image" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">LIVITY ITAL'S</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$109</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="img/254112323485_status_10a162a7e3714dc4a11e386d090fd369.jpg" alt="image" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">LIVITY ITAL'S</br> 500g</br> SEASON</h1>
+                <h2 class="sliderPrice">$129</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="img/254112323485_status_d5ea706ae1cc476aac81b3cc2ed2e105.jpg" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">LIVITY ITAL'S</br> 500g</br> SEASON</h1>
+                <h2 class="sliderPrice">$99</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+        </div>
+    </div>  -->
+     
+   
+    <div class="features">
+        <div class="feature">
+            <img src="./img/shipping.png" alt="" class="featureIcon">
+            <span class="featureTitle">AVAILABLE SHIPPING</span>
+            <span class="featureDesc">worldwide shipping on all orders.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/return.png" alt="">
+            <span class="featureTitle">RETURN & REFUND</span>
+            <span class="featureDesc">No question return and easy refund in 3 days.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/gift.png" alt="">
+            <span class="featureTitle">DONATE/FUND</span>
+            <span class="featureDesc">Invest in a better future. Your donation creates positive change.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/contact.png" alt="">
+            <span class="featureTitle">CONTACT US!</span>
+            <span class="featureDesc">Keep in touch via email and support system.</span>
+        </div>
+    </div>
+
+    <div class="product" id="product">
+        <img src="img/254112323485_status_96c3007ae99b42ffaf613a4f4432b761.jpg" alt="" class="productImg">
+        <div class="productDetails">
+            <h1 class="productTitle">.LIVITY ITAL'S</h1>
+            <h2 class="productPrice">KSH 0.0</h2>
+            <p class="productDesc">LIVITY ITAL'S Honey — a golden elixir straight from the hive, bringing you the essence of nature's purest creation.</p>
+            <div class="colors">
+               <div class="color"></div>
+            </div>
+            <div class="sizes">
+                <div class="size">500G</div>
+                <div class="size">300G</div>
+                <div class="size">1KG</div>
+            </div>
+            <button class="productButton">BUY NOW!</button>
+        </div>
+     <!--   <div class="payment">
+            <h1 class="payTitle">Personal Information</h1>
+            <label>Name and Surname</label>
+            <input type="text" placeholder="John Doe" class="payInput">
+            <label>Phone Number</label>
+            <input type="text" placeholder="+1 234 5678" class="payInput">
+            <label>Address</label>
+            <input type="text" placeholder="Elton St 21 22-145" class="payInput">
+            <h1 class="payTitle">Card Information</h1>
+            <div class="cardIcons">
+                <img src="./img/visa.png" width="40" alt="" class="cardIcon">
+                <img src="./img/master.png" alt="" width="40" class="cardIcon">
+            </div>
+            <input type="password" class="payInput" placeholder="Card Number">
+            <div class="cardInfo">
+                <input type="text" placeholder="mm" class="payInput sm">
+                <input type="text" placeholder="yyyy" class="payInput sm">
+                <input type="text" placeholder="cvv" class="payInput sm">
+            </div>
+            <button class="payButton">Checkout!</button>
+            <span class="close">X</span>
+        </div> -->
+    </div> 
+    <div class="gallery" style="background:#000000">
+        <div class="galleryItem">
+            <h1 class="galleryTitle" style="color: antiquewhite">Be Yourself!</h1>
+            <img src="img/254112323485_status_958f8b43be6f409aaf6cbb7522599cd6.jpg"
+                alt="" style="border-radius: 50px" class="galleryImg">
+        </div>
+        <div class="galleryItem">
+            <img src="img/254112323485_status_10a162a7e3714dc4a11e386d090fd369.jpg"
+                alt="" class="galleryImg" style="border-radius: 50px">
+            <h1 class="galleryTitle" style="color: antiquewhite">Discover the art of honey perfection with Honey LIVITY</h1>
+        </div>
+        <div class="galleryItem">
+            <h1 class="galleryTitle" style="color: antiquewhite">a journey into the heart of honey's natural goodness!</h1>
+            <img src="img/254112323485_status_ed20e9a4eb134a34b0438e3af2235b46.jpg"
+                alt="" class="galleryImg" style="border-radius: 50px">
+        </div>
+    </div>
+    <div class="newSeason">
+        <div class="nsItem">
+            <img src="img/IMG-20231101-WA0035.jpg.png"
+                alt="" class="nsImg" style="border-radius: 50px;width: 80%; height: 80%; margin-top: 40px">
+        </div>
+       <div class="nsItem">
+  <h3 class="nsTitleSm">DISCOVER HONEY PERFECTION</h3>
+  <h1 class="nsTitle">Unveiling</h1>
+  <h1 class="nsTitle">LIVITY's Signature Honey Collection</h1>
+  <a href="#nav">
+    <button class="nsButton" style="background-color:#AE8E61; color: #FFD700; font-size: 2em; font-family:  'cabin-sketch'; font-weight: bold">WE ARE ONE</button>
+  </a>
+</div>
+
+       <div class="nsItem" >
+  <div class="slideshow-container" style="width: 90%;height: 90%">
+    <img src="img/254112323485_status_1b75cc0a943c4dae81efc17d21d151f1.jpg"   alt="image" class="nsImg">
+	  <img src="img/254112323485_status_8c756783826b446aa922ee69820333a5.jpg" alt="image" class="nsImg">
+	  <img src="img/254112323485_status_d5ea706ae1cc476aac81b3cc2ed2e105.jpg" alt="image" class="nsImg">
+	  <img src="img/254112323485_status_10a162a7e3714dc4a11e386d090fd369.jpg" alt="image" class="nsImg">
+	  <img src="img/254112323485_status_295c0da0ec01495499bbe4909bde9175.jpg" alt="image" class="nsImg">
+	  
+    <!-- Add more images as needed -->
+  </div>
+
+  <!-- Navigation buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+    </div>
+	     
+    <footer style="background: white" >
+		
+		
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem">Company</li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Affiliates</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fList">
+                    <li class="fListItem">Support</li>
+                    <li class="fListItem">Refund</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                 </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="fList">
+                    <li class="fListItem">.ITAL'S HONEY</li>
+                 </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+                <div class="fMail">
+                    <input type="text" placeholder="" class="fInput">
+                    <button class="fButton">Join!</button>
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <img src="./img/facebook.png" alt="" class="fIcon">
+                    <img src="./img/twitter.png" alt="" class="fIcon">
+                    <img src="./img/instagram.png" alt="" class="fIcon">
+                    <img src="./img/whatsapp.png" alt="" class="fIcon">
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">@howbout_t. All rights reserved. 2023.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+   
+	<script>
+  // JavaScript to control sound toggle
+  function toggleSound() {
+    var video = document.getElementById('video-background');
+    var checkbox = document.getElementById('checkboxInput');
+
+    // Toggle the muted state of the video based on checkbox state
+    video.muted = !checkbox.checked;
+  }
+</script>
+	<script>
+  var slideIndex = 1;
+
+  function showSlides(n) {
+    var slides = document.querySelector(".slideshow-container").children;
+
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+
+    for (var i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+  }
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  showSlides(slideIndex);
+</script>
+<script>
+  var slideIndex = 1;
+
+  function showSlides(n) {
+    var slides = document.querySelector(".slideshow-container").children;
+
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+
+    for (var i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+  }
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function autoSlide() {
+    plusSlides(1);
+  }
+
+  // Change slide every 3 seconds (adjust as needed)
+  setInterval(autoSlide, 5000);
+
+  showSlides(slideIndex);
+</script>
+
+
+</body>
+
+</html>
